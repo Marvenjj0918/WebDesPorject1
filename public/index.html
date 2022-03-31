@@ -1,13 +1,380 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Express</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
+  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="styles.css">
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
 
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
+    <div class="container">
+      <div class="NavBar">
+      <div class="MenuBar">
+      <i class="fa fa-bars" id="MenuBtn" onclick="openmenu()"></i>
+      <i class="fa fa-times" id="CloseBtn" onclick="closemenu()"></i>
+       
+        <img src="./Images/Picture1.png" class="Logo">
+
+        
+         
+            <div class="data-collection">
+              <ul>
+                <li>
+                <a href="./Log-in.html">log-in</a></li>
+                <li><a href="./Sign-up.html">sign up</a></li>
+                <li><a href="./Cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+              </ul>
+            </div>
+            <div class="SearchBox">
+              <input type="text" class="form-control">
+              <span class="input-goup-text"><i class="fa fa-search"></i> </span>
+            </div>
+           
+          </div>
+     
+      
+      </div>
+      <div class="SideMenu" id="SideMenu">
+        <!-- <i class="fa fa-angle-right"></i>
+                <ul>
+                  <li>subMenu</li>
+                  <li>subMenu</li>
+                  <li>subMenu</li>
+                  <li>subMenu</li>
+                </ul> -->
+      
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Games.html">Games</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="portfolio-items-wrapper">
+          
+          <div class="portfolio-item-wrapper">
+             
+            <div class="portfolio-img-backgound" style= "background-image: url(./Images/ps5consol.jpg);">
+              </div>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <!-- <img src="./Images/logo1.png" alt=""> -->
+                </div>
+                <div class="subtitle">
+                  The PS5 is, by far, the hottest item on Black Friday.
+                </div>
+              </div>
+            <p> <a href="ps5.html">Ps5</a>
+              </p>
+          </div>
+
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-backgound" style="background-image: url(./Images/backgroung\ 1.jfif);">
+              </div>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                              <!-- <img src="./logos/dailysmarty.png" alt=""> -->
+                            </div>
+                <div class="subtitle">
+                  The PS5 is, by far, the hottest item on Black Friday.
+                </div>
+              </div>
+            </div>
+
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-backgound" style="background-image: url(./Images/psa1.jpg);">
+                </div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                                <!-- <img src="./logos/dashtrack.png" alt=""> -->
+                              </div>
+                  <div class="subtitle">
+                    Support for faster frame rates delivers super-sharp action for select PS4 games..
+                  </div>
+                </div>
+              </div>
+
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/xboxconsol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                                  <!-- <img src="./logos/devcamp.png" alt=""> -->
+                                </div>
+                    <div class="subtitle">
+                      Xbox One brings you closer to the entertainment you love and the people you care about.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ACValhalla.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      Assassin's Creed Valhalla is an action role-playing video game developed by Ubisoft Montreal and published by Ubisoft.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Games/COD_Warzone_cover_art.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      Call of Duty: Warzone is a free-to-play battle royale video game released on March 10, 2020
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Games/Deathloop-Deluxe-Edition.jfif);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      Deathloop is an upcoming action-adventure game developed by Arkane Studios and published by Bethesda Softworks.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Games/Demons-Souls.jpeg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                    Demon's Souls is an action role-playing game developed by FromSoftware for the PlayStation 3 under the supervision of
+                    SIE Japan Studio.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                  </div>
+                  <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                      <!-- <img src="./logos/devcamp.png" alt=""> -->
+                    </div>
+                    <div class="subtitle">
+                      The PS5 is, by far, the hottest item on Black Friday.
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                    </div>
+                    <div class="img-text-wrapper">
+                      <div class="logo-wrapper">
+                                    <!-- <img src="./logos/devtrunk.png" alt=""> -->
+                                  </div>
+                      <div class="subtitle">
+                        The PS5 is, by far, the hottest item on Black Friday.
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="portfolio-item-wrapper">
+                      <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                      </div>
+                      <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                                      <!-- <img src="./logos/edutechional.png" alt=""> -->
+                                    </div>
+                        <div class="subtitle">
+                          The PS5 is, by far, the hottest item on Black Friday.
+                        </div>
+                      </div>
+                    </div>
+
+                      <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-backgound" style="background-image: url(./Images/ps5consol.jpg);">
+                        </div>
+                        <div class="img-text-wrapper">
+                          <div class="logo-wrapper">
+                                        <!-- <img src="./logos/eventbrite.png" alt=""> -->
+                                      </div>
+                          <div class="subtitle">
+                            The PS5 is, by far, the hottest item on Black Friday.
+                          </div>
+                        </div>
+                      </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      function openmenu() 
+      {
+        document.getElementById("SideMenu").style.display="block";
+        document.getElementById("MenuBtn").style.display = "none";
+        document.getElementById("CloseBtn").style.display = "block";
+
+      }
+      function closemenu() 
+      {
+        document.getElementById("SideMenu").style.display = "none";
+        document.getElementById("MenuBtn").style.display = "block";
+        document.getElementById("CloseBtn").style.display = "none";
+
+      }
+    </script>
 </body>
 
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem =>{
+
+    portfolioItem.addEventListener('mouseover', ()=>{
+      portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+        portfolioItem.addEventListener('mouseout', () => {
+      portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+
+  })
+
+</script>
+
 </html>
+
+
+
