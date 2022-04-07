@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="NavBar">
+      <div class="MenuBar">
+        <i class="fa fa-bars" id="MenuBtn" onclick="openmenu()"></i>
+        <i class="fa fa-times" id="CloseBtn" onclick="closemenu()"></i>
+
+        <img src="./Images/Picture1.png" class="Logo">
+
+
+
+        <div class="data-collection">
+          <ul>
+            <li>
+              <a href="./Log-in.html">log-in</a></li>
+              <li><a href="./Sign-up.html">sign up</a></li>
+              <li><a href="./Cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+          </ul>
+        </div>
+        <div class="SearchBox">
+          <input type="text" class="form-control">
+          <span class="input-goup-text"><i class="fa fa-search"></i> </span>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="SideMenu" id="SideMenu">
+      <!-- <i class="fa fa-angle-right"></i>
+                <ul>
+                  <li>subMenu</li>
+                  <li>subMenu</li>
+                  <li>subMenu</li>
+                  <li>subMenu</li>
+                </ul> -->
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <script>
+    function openmenu() {
+      document.getElementById("SideMenu").style.display = "block";
+      document.getElementById("MenuBtn").style.display = "none";
+      document.getElementById("CloseBtn").style.display = "block";
+
+    }
+    function closemenu() {
+      document.getElementById("SideMenu").style.display = "none";
+      document.getElementById("MenuBtn").style.display = "block";
+      document.getElementById("CloseBtn").style.display = "none";
+
+    }
+  </script>
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+
+    portfolioItem.addEventListener('mouseover', () => {
+      portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+    portfolioItem.addEventListener('mouseout', () => {
+      portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+
+  })
+
+</script>
+
+</html>

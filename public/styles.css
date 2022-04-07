@@ -1,0 +1,289 @@
+Master styles
+*
+{
+  margin:0 ;
+  padding: 0;
+}
+body{
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr ;
+  background-color: #fff;
+
+}
+
+.SideMenu
+{
+  height: 100%;
+  width: 10%;
+  font-size: 20px;
+  float: left;
+  z-index: 2;
+  background-color: #8a8a8a;
+  display: none;
+}
+.SideMenu ul
+{
+  margin-left: 10px;
+}
+.SideMenu ul li
+{
+  list-style-type: none;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  color: black;
+}
+.SideMenu ul li a
+{
+  color: black;
+}
+
+.SideMenu ul :hover
+{
+  color: #616161;
+}
+.SideMenu ul 
+{
+  /* display: none; */
+  z-index: 10;
+  top: 77px;
+}
+
+  #MenuBtn, #CloseBtn
+{
+  font-size: 30px;
+  margin:10px;
+  color: black;
+  display: none;
+
+}
+#MenuBtn:hover
+{
+  cursor: pointer;
+  color: #8a8a8a;
+}
+#MenuBtn
+{
+  display: block;
+}
+.Logo
+{
+  height: 50px;
+  margin: 5px 10px;
+}
+.MenuBar 
+{
+background-color: #fff;
+  display: flex;
+  /* padding: 38px; */
+  font-size: 1em;  
+}
+.NavBar{
+  top: 0;
+  position: sticky;
+  /* border-bottom: 3px solid; */
+  z-index: 2;
+}
+ .data-collection ul li a
+ {
+  margin-right: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  font-weight: 600;
+}
+.data-collection{
+  /* padding: 38px; */
+  font-size: 1em; 
+}
+
+.form-control{
+  margin-top:  32px;
+  margin-left: 30px !important;
+  margin-bottom: 15px;
+  border: 2px solid !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  box-shadow:none;
+}
+.input-goup-text
+{
+  margin:32px 5px 15px -1.5px;
+  border: 2px solid !important ;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  cursor: pointer;
+}
+.SearchBox
+{
+  float: right;
+  display: inline-flex;
+  width: 20%;
+} 
+.fa-shopping-cart
+{
+  margin-right: 5px;
+}
+
+
+.link a{
+color: #8a8a8a;
+text-decoration: none;
+transition: color 0.5s;
+
+}
+
+.link:hover{
+  border-bottom: 1px solid black;
+}
+.link a:hover{
+  color: black;
+}
+
+.portfolio-items-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 13px;
+}
+.portfolio-item-wrapper{
+  position: relative;
+}
+.portfolio-img-backgound{
+  height: 350px;
+  width: 90%;
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat ;
+    margin-bottom: 20px;
+}
+.img-text-wrapper{
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.data-collection
+{
+  width:100%;
+  height: 0px;
+  float: right;
+  margin-top: 0px;
+   margin-right:0px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  font-weight: bold;
+}
+.data-collection ul
+{
+  display: inline-flex ;
+  float: right;
+}
+.data-collection ul li
+{
+  list-style-type: none;
+  padding: 15px 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.data-collection ul li a
+{
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+
+}
+
+.data-collection ul li a:hover
+{
+  color: rgb(121, 115, 115);
+}
+
+/* 
+.logo-wrapper img{
+  width: 60%;
+  margin-bottom: 0px;
+} */
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  color: transparent;
+    font-weight: 600;
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: aqua;
+}
+
+.img-darken{
+  transition: 1s;
+  filter: brightness(10%);
+}
+  .data-collection
+  {
+
+    float: right;
+  }
+
+@media only screen and (max-width:980px)
+{
+  .MenuBar
+  {
+    height: 118px;
+    margin-bottom: 0;
+  }
+  .SideMenu
+  {
+    width: 34%;
+    z-index: 20;
+    top: 133px;
+    position: fixed;
+    font-size: 10px;
+  }
+
+
+  .SearchBox
+  {
+    width: 100%;
+  }
+  .data-collection
+  {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .container
+  {
+    width: 100%;
+  }
+  .info
+  {
+    width: 100%;
+  }
+  .link
+  {
+    height: 57px;
+    width: 100%;
+  }
+
+
+
+}
+
