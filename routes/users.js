@@ -67,10 +67,13 @@ router.post('/login',
   // authentication locally (not using passport-google, passport-twitter, passport-github...)
   passport.authenticate('local', { failureRedirect: 'login?message=Incorrect+credentials', failureFlash:true }),
   function(req, res,next) {
-    let prefer = req.user.prefer;
-    console.log("fullname: ", prefer);
-    res.redirect('/users/profile?name='+prefer); // Successful. redirect to localhost:3000/users/profile
-});
+    console.log
+    if (req.user.isadmin == 'admin'){
+      res.redirect('/admin');
+    }
+    else {
+      res.redirect('/index');
+    }});
 
 
 router.get('/signup',function(req, res) {
