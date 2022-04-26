@@ -72,9 +72,12 @@ router.post('/login',
       res.redirect('/admin');
     }
     else {
-      res.redirect('/index');
+      res.redirect('/users/index');
     }});
 
+router.get('/index', function(req, res){
+  res.sendFile(path.join(__dirname,'..', 'public','index.html'));
+});
 
 router.get('/signup',function(req, res) {
   // If logged in, go to profile page
