@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Games page</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Home page</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <!--  <link rel='stylesheet' href='styles.css'>-->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
-  <div class="container">
-    <div class="NavBar">
-      <div class="MenuBar">
-        <i class="fa fa-bars" id="MenuBtn" onclick="openmenu()"></i>
-        <i class="fa fa-times" id="CloseBtn" onclick="closemenu()"></i>
+<!--<div class="animated-background">-->
+<div class="container">
+  <div class="NavBar">
+    <div class="MenuBar">
+      <i class="fa fa-bars" id="MenuBtn" onclick="openmenu()"></i>
+      <i class="fa fa-times" id="CloseBtn" onclick="closemenu()"></i>
 
-        <img src="./Images/Picture1.png" class="Logo">
+      <img src="/images/Logo.png" class="Logo">
 
 
 
-        <div class="data-collection">
-          <ul>
-            <li>
-  <a href="./Log-in.html">log-in</a></li>
-  <li><a href="./Sign-up.html">sign up</a></li>
-  <li><a href="./Cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
-          </ul>
-        </div>
-        <div class="SearchBox">
-          <input type="text" class="form-control">
-          <span class="input-goup-text"><i class="fa fa-search"></i> </span>
-        </div>
+      <div class="data-collection">
+        <ul>
+          <li>
+            <!-- <a href="./Log-in.html">log-in</a></li>
+            <li><a href="./Sign-up.html">sign up</a></li> -->
+            <!-- <nav class="menu"> -->
 
+          <li><a href="/users/login">Log in</a> | </li>
+          <li><a href="/users/signup">Sign up</a></li>
+
+
+          <li><a href="/users/Cart"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+        </ul>
+      </div>
+      <div class="SearchBox">
+        <input type="text" placeholder="Search.." class="form-control">
+        <button class="input-goup-text" type="submit"><i class="fa fa-search"></i> </button>
       </div>
 
-
     </div>
-    <div class="SideMenu" id="SideMenu">
-      <!-- <i class="fa fa-angle-right"></i>
-                <ul>
-                  <li>subMenu</li>
-                  <li>subMenu</li>
-                  <li>subMenu</li>
-                  <li>subMenu</li>
-                </ul> -->
 
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Menu.html">Menu</a></li>
-        <li><a href="Games.html">Games</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
+
+  </div>
+  <div class="SideMenu" id="SideMenu">
+    <!-- <i class="fa fa-angle-right"></i>
+            <ul>
+              <li>subMenu</li>
+              <li>subMenu</li>
+              <li>subMenu</li>
+              <li>subMenu</li>
+            </ul> -->
+
+    <ul>
+      <li><a href="/users/index">Home</a></li>
+      <li><a href="/users/Menu">Menu</a></li>
+      <li><a href="/users/Games">Games</a></li>
+      <li><a href="/users/about">About</a></li>
+    </ul>
   </div>
   <div class="cd-cart cd-cart--empty js-cd-cart">
     <a href="#0" class="cd-cart__trigger text-replace">
@@ -100,7 +108,7 @@
       <li class="cd-cart__product">
         <div class="cd-cart__image">
           <a href="#0">
-            <img src="images/ps5Vanguard.jpeg" alt="PlayStation 5 Popular Games">
+            <img src="/images/ps5Vanguard.jpeg" alt="PlayStation 5 Popular Games">
           </a>
         </div>
 
@@ -131,83 +139,83 @@
     </ul>
   </div>
 
-  </div>
-  <style>
-    .cd-cart__trigger,
-    .cd-cart__content {
-      position: fixed;
-      bottom: 20px;
-      right: 5%;
-      transition: transform .2s;
-    }
+</div>
+<style>
+  .cd-cart__trigger,
+  .cd-cart__content {
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+    transition: transform .2s;
+  }
 
-    .cd-cart--empty .cd-cart__trigger,
-    .cd-cart--empty .cd-cart__content { // hide cart
-    transform: translateY(150px);
-    }
+  .cd-cart--empty .cd-cart__trigger,
+  .cd-cart--empty .cd-cart__content { // hide cart
+  transform: translateY(150px);
+  }
 
-    .cd-cart__layout {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 2;
-      overflow: hidden;
-      height: 72px;
-      width: 72px;
-      border-radius: var(--radius);
-      transition: height .4s .1s, width  .4s .1s, box-shadow .3s;
-      transition-timing-function: cubic-bezier(.67,.17,.32,.95);
-      background: var(--cd-color-3);
-      box-shadow: 0 4px 30px rgba(000, .17);
-    }
-
-    .cd-cart--open .cd-cart__layout {
-      height: 100%;
-      width: 100%;
-      transition-delay: 0s;
-    }
-
-    .cd-cart__product--deleted { // this class is added to an item when it is removed form the cart
+  .cd-cart__layout {
     position: absolute;
-      left: 0;
-      width: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+    height: 72px;
+    width: 72px;
+    border-radius: var(--radius);
+    transition: height .4s .1s, width  .4s .1s, box-shadow .3s;
+    transition-timing-function: cubic-bezier(.67,.17,.32,.95);
+    background: var(--cd-color-3);
+    box-shadow: 0 4px 30px rgba(000, .17);
+  }
+
+  .cd-cart--open .cd-cart__layout {
+    height: 100%;
+    width: 100%;
+    transition-delay: 0s;
+  }
+
+  .cd-cart__product--deleted { // this class is added to an item when it is removed form the cart
+  position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    animation: cd-item-slide-out .3s forwards;
+  }
+
+  @keyframes cd-item-slide-out {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(80px);
       opacity: 0;
-      animation: cd-item-slide-out .3s forwards;
     }
+  }
+</style>
 
-    @keyframes cd-item-slide-out {
-      0% {
-        transform: translateX(0);
-        opacity: 1;
-      }
-      100% {
-        transform: translateX(80px);
-        opacity: 0;
-      }
-    }
-  </style>
+<script>
+  function openmenu() {
+    document.getElementById("SideMenu").style.display = "block";
+    document.getElementById("MenuBtn").style.display = "none";
+    document.getElementById("CloseBtn").style.display = "block";
 
-  <script>
-    function openmenu() {
-      document.getElementById("SideMenu").style.display = "block";
-      document.getElementById("MenuBtn").style.display = "none";
-      document.getElementById("CloseBtn").style.display = "block";
+  }
+  function closemenu() {
+    document.getElementById("SideMenu").style.display = "none";
+    document.getElementById("MenuBtn").style.display = "block";
+    document.getElementById("CloseBtn").style.display = "none";
 
-    }
-    function closemenu() {
-      document.getElementById("SideMenu").style.display = "none";
-      document.getElementById("MenuBtn").style.display = "block";
-      document.getElementById("CloseBtn").style.display = "none";
+  }
 
-    }
+  function addProduct(target) {
+    // this is just a product placeholder
+    var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="images/ps5Vanguard.jpeg" alt="Ps5 Vanguard"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">PlayStation 5 Popular Games</a></h3><span class="cd-cart__price">$65.00</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Delete</a><div class="cd-cart__quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
+    cartList.insertAdjacentHTML('beforeend', productAdded);
+  };
 
-    function addProduct(target) {
-      // this is just a product placeholder
-      var productAdded = '<li class="cd-cart__product"><div class="cd-cart__image"><a href="#0"><img src="images/ps5Vanguard.jpeg" alt="Ps5 Vanguard"></a></div><div class="cd-cart__details"><h3 class="truncate"><a href="#0">PlayStation 5 Popular Games</a></h3><span class="cd-cart__price">$65.00</span><div class="cd-cart__actions"><a href="#0" class="cd-cart__delete-item">Delete</a><div class="cd-cart__quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="cd-cart__select"><select class="reset" id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select><svg class="icon" viewBox="0 0 12 12"><polyline fill="none" stroke="currentColor" points="2,4 6,8 10,4 "/></svg></span></div></div></div></li>';
-      cartList.insertAdjacentHTML('beforeend', productAdded);
-    };
-
-  </script>
+</script>
 </body>
 
 <script>

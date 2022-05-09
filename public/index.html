@@ -2,349 +2,355 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home page</title>
-  <link rel="stylesheet" href="styles.css">
-   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <!--  <link rel='stylesheet' href='styles.css'>-->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
 
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  <div class="animated-background">
-    <div class="container">
-      <div class="NavBar">
+<div class="animated-background">
+  <div class="container">
+    <div class="NavBar">
       <div class="MenuBar">
-      <i class="fa fa-bars" id="MenuBtn" onclick="openmenu()"></i>
-      <i class="fa fa-times" id="CloseBtn" onclick="closemenu()"></i>
-       
-        <img src="./Images/Logo.png" class="Logo">
+        <i class="fa fa-bars" id="MenuBtn" onclick="openmenu()"></i>
+        <i class="fa fa-times" id="CloseBtn" onclick="closemenu()"></i>
 
-        
-         
-            <div class="data-collection">
+        <img src="/images/Logo.png" class="Logo">
+
+
+
+        <div class="data-collection">
+          <ul>
+            <li>
+              <!-- <a href="./Log-in.html">log-in</a></li>
+              <li><a href="./Sign-up.html">sign up</a></li> -->
+              <!-- <nav class="menu"> -->
+
+            <li><a href="/users/login">Log in</a> | </li>
+            <li><a href="/users/signup">Sign up</a></li>
+
+
+            <li><a href="/users/Cart"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+          </ul>
+        </div>
+        <div class="SearchBox">
+          <input type="text" placeholder="Search.." class="form-control">
+          <button class="input-goup-text" type="submit"><i class="fa fa-search"></i> </button>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="SideMenu" id="SideMenu">
+      <!-- <i class="fa fa-angle-right"></i>
               <ul>
-                <li>
-                <!-- <a href="./Log-in.html">log-in</a></li>
-                <li><a href="./Sign-up.html">sign up</a></li> -->
-                <!-- <nav class="menu"> -->
-                
-                    <li><a href="/users/login">Log in</a> | </li>
-                    <li><a href="/users/signup">Sign up</a></li>
-                  
-                
-                <li><a href="./Cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
-              </ul>
+                <li>subMenu</li>
+                <li>subMenu</li>
+                <li>subMenu</li>
+                <li>subMenu</li>
+              </ul> -->
+
+      <ul>
+        <li><a href="/users/index">Home</a></li>
+        <li><a href="/users/Menu">Menu</a></li>
+        <li><a href="/users/Games">Games</a></li>
+        <li><a href="/users/about">About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <div class="portfolio-items-wrapper">
+
+      <div class="portfolio-item-wrapper">
+
+        <a href="/users/ps5"> <div class="portfolio-img-backgound" href="ps5.html" style= "background-image: url(/images/ps5consol.jpg);">
+        </div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <!-- <img src="./Images/logo1.png" alt=""> -->
             </div>
-            <div class="SearchBox">
-              <input type="text" placeholder="Search.." class="form-control">
-              <button class="input-goup-text" type="submit"><i class="fa fa-search"></i> </button>
+            <div class="subtitle">
+              Hard to find Consoles
             </div>
-           
-          </div>
-     
-      
+          </div></a>
+        <p> <a href="/users/ps5">Popular Consoles</a>
+        </p>
       </div>
-      <div class="SideMenu" id="SideMenu">
-        <!-- <i class="fa fa-angle-right"></i>
-                <ul>
-                  <li>subMenu</li>
-                  <li>subMenu</li>
-                  <li>subMenu</li>
-                  <li>subMenu</li>
-                </ul> -->
-      
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Menu.html">Menu</a></li>
-          <li><a href="Games.html">Games</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="portfolio-items-wrapper">
-          
-          <div class="portfolio-item-wrapper">
 
-            <a href="ps5.html"> <div class="portfolio-img-backgound" style= "background-image: url(./Images/ps5consol.jpg);">
-            </div>
-              <div class="img-text-wrapper">
-                <div class="logo-wrapper">
-                  <!-- <img src="./Images/logo1.png" alt=""> -->
-                </div>
-                <div class="subtitle">
-                  Hard to find Consoles
-                </div>
-              </div></a>
-            <p> <a href="ps5.html">Popular Consoles</a>
-              </p>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/backgroung3.jpg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/dailysmarty.png" alt=""> -->
           </div>
+          <div class="subtitle">
+            Most Popular Console Games
+          </div>
+        </div>
+        <p> <a href="/users/games">Console Games</a>
+        </p>
+      </div>
 
-            <div class="portfolio-item-wrapper">
-              <div class="portfolio-img-backgound" style="background-image: url(./Images/backgroung\ 1.jfif);">
-              </div>
-              <div class="img-text-wrapper">
-                <div class="logo-wrapper">
-                              <!-- <img src="./logos/dailysmarty.png" alt=""> -->
-                            </div>
-                <div class="subtitle">
-                  Most Popular Console Games
-                </div>
-              </div>
-              <p> <a href="games.html">Console Games</a>
-              </p>
-            </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/preBuiltPc.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/dashtrack.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            Pre-Built PCs
+          </div>
+        </div>
+        <p> <a href="/users/PCPreBuilt">Pre-Build PCs</a>
+        </p>
+      </div>
 
-              <div class="portfolio-item-wrapper">
-                <div class="portfolio-img-backgound" style="background-image: url(./Images/preBuiltPc.jpeg);">
-                </div>
-                <div class="img-text-wrapper">
-                  <div class="logo-wrapper">
-                                <!-- <img src="./logos/dashtrack.png" alt=""> -->
-                              </div>
-                  <div class="subtitle">
-                    Pre-Built PCs
-                  </div>
-                </div>
-                <p> <a href="PC Pre-Built.html">Pre-Build PCs</a>
-                </p>
-              </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/geforce3090Ti.png);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            Graphics Cards
+          </div>
+        </div>
+        <p> <a href="/users/GraphicsCards">Graphic Cards</a>
+        </p>
+      </div>
 
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/geforce3090Ti.png);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                                  <!-- <img src="./logos/devcamp.png" alt=""> -->
-                                </div>
-                    <div class="subtitle">
-                      Graphics Cards
-                    </div>
-                  </div>
-                  <p> <a href="Graphics Cards.html">Graphic Cards</a>
-                  </p>
-                </div>
-
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/AssassinCreedValhalla.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      Assassin's Creed Valhalla is an action role-playing video game developed by Ubisoft Montreal and published by Ubisoft.
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/COD_ColdWar.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      Call of Duty: Warzone is a free-to-play battle royale video game released on March 10, 2020
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/Deathloop-Deluxe-Edition.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      Deathloop is an upcoming action-adventure game developed by Arkane Studios and published by Bethesda Softworks.
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/Demons-Souls.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                    Demon's Souls is an action role-playing game developed by FromSoftware for the PlayStation 3 under the supervision of
-                    SIE Japan Studio.
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/halo.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                     Halo Infinite
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ps4Pro.jpg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      ps4 Pro, if ps5 is ahrd to come by
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/xboxOneX.jpg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      Xbox One
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/3080Ti.jpg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      GPU 3080 Ti
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/minecraft.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      Fall in love of that awesome virtual word
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/Switch.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      The best portable console out there
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/Iphone13proMax.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      The Iphone 13 pro max is, by far, the hottest item in your pocket.
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/Samsungs22ultr.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      The S22 ultra is, by far, the hottest item on bag.
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/ForzaHorazon.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                     The coolest driving game.
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/Wheel&pedal.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      Take your driving game to the next level
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                  <div class="portfolio-img-backgound" style="background-image: url(./Images/Xbox-X.jpeg);">
-                  </div>
-                  <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                      <!-- <img src="./logos/devcamp.png" alt=""> -->
-                    </div>
-                    <div class="subtitle">
-                      The Xbox X is, by far, the most powerful item.
-                    </div>
-                  </div>
-                </div>
-
-                  <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-backgound" style="background-image: url(./Images/Pixel5.jpeg);">
-                    </div>
-                    <div class="img-text-wrapper">
-                      <div class="logo-wrapper">
-                                    <!-- <img src="./logos/devtrunk.png" alt=""> -->
-                                  </div>
-                      <div class="subtitle">
-                        The google pixel 5 is, by far, the fastes phone in the market.
-                      </div>
-                    </div>
-                  </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/AssassinCreedValhalla.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            Assassin's Creed Valhalla is an action role-playing video game developed by Ubisoft Montreal and published by Ubisoft.
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/COD_ColdWar.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            Call of Duty: Warzone is a free-to-play battle royale video game released on March 10, 2020
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/Deathloop-Deluxe-Edition.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            Deathloop is an upcoming action-adventure game developed by Arkane Studios and published by Bethesda Softworks.
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/Demons-Souls.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            Demon's Souls is an action role-playing game developed by FromSoftware for the PlayStation 3 under the supervision of
+            SIE Japan Studio.
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/halo.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            Halo Infinite
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/ps4Pro.jpg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            ps4 Pro, if ps5 is ahrd to come by
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/xboxOneX.jpg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            Xbox One
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/3080Ti.jpg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            GPU 3080 Ti
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/minecraft.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            Fall in love of that awesome virtual word
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/Switch.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            The best portable console out there
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/Iphone13proMax.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            The Iphone 13 pro max is, by far, the hottest item in your pocket.
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/Samsungs22ultr.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            The S22 ultra is, by far, the hottest item on bag.
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/ForzaHorazon.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            The coolest driving game.
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/Wheel&pedal.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            Take your driving game to the next level
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/Xbox-X.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devcamp.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            The Xbox X is, by far, the most powerful item.
+          </div>
         </div>
       </div>
 
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-img-backgound" style="background-image: url(/images/Pixel5.jpeg);">
+        </div>
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <!-- <img src="./logos/devtrunk.png" alt=""> -->
+          </div>
+          <div class="subtitle">
+            The google pixel 5 is, by far, the fastes phone in the market.
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script>
-      function openmenu() 
-      {
-        document.getElementById("SideMenu").style.display="block";
-        document.getElementById("MenuBtn").style.display = "none";
-        document.getElementById("CloseBtn").style.display = "block";
-
-      }
-      function closemenu() 
-      {
-        document.getElementById("SideMenu").style.display = "none";
-        document.getElementById("MenuBtn").style.display = "block";
-        document.getElementById("CloseBtn").style.display = "none";
-
-      }
-    </script>
   </div>
+
+</div>
+
+<script>0.
+
+function openmenu()
+{
+  document.getElementById("SideMenu").style.display="block";
+  document.getElementById("MenuBtn").style.display = "none";
+  document.getElementById("CloseBtn").style.display = "block";
+
+}
+function closemenu()
+{
+  document.getElementById("SideMenu").style.display = "none";
+  document.getElementById("MenuBtn").style.display = "block";
+  document.getElementById("CloseBtn").style.display = "none";
+
+}
+</script>
+</div>
 </body>
 
 <script>
@@ -355,7 +361,7 @@
     portfolioItem.addEventListener('mouseover', ()=>{
       portfolioItem.childNodes[1].classList.add('img-darken');
     })
-        portfolioItem.addEventListener('mouseout', () => {
+    portfolioItem.addEventListener('mouseout', () => {
       portfolioItem.childNodes[1].classList.remove('img-darken');
     })
   })

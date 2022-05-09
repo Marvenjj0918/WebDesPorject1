@@ -17,84 +17,84 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="NavBar">
-      <div class="MenuBar">
-        <i class="fa fa-bars" id="MenuBtn" onclick="openmenu()"></i>
-        <i class="fa fa-times" id="CloseBtn" onclick="closemenu()"></i>
+<div class="container">
+  <div class="NavBar">
+    <div class="MenuBar">
+      <i class="fa fa-bars" id="MenuBtn" onclick="openmenu()"></i>
+      <i class="fa fa-times" id="CloseBtn" onclick="closemenu()"></i>
 
-        <img src="./Images/Picture1.png" class="Logo">
+      <img src="./Images/Picture1.png" class="Logo">
 
 
 
-        <div class="data-collection">
-          <ul>
-            <li>
-              <a href="./Log-in.html">log-in</a></li>
-            <li><a href="./Sign-up.html">sign up</a></li>
-            <li><a href="./Cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
-          </ul>
-        </div>
-        <div class="SearchBox">
-          <input type="text" class="form-control">
-          <span class="input-goup-text"><i class="fa fa-search"></i> </span>
-        </div>
-
+      <div class="data-collection">
+        <ul>
+          <li>
+            <a href="./Log-in.html">log-in</a></li>
+          <li><a href="./Sign-up.html">sign up</a></li>
+          <li><a href="./Cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+        </ul>
+      </div>
+      <div class="SearchBox">
+        <input type="text" class="form-control">
+        <span class="input-goup-text"><i class="fa fa-search"></i> </span>
       </div>
 
-
-    </div>
-    <div class="SideMenu" id="SideMenu">
-      <!-- <i class="fa fa-angle-right"></i>
-                <ul>
-                  <li>subMenu</li>
-                  <li>subMenu</li>
-                  <li>subMenu</li>
-                  <li>subMenu</li>
-                </ul> -->
-
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Menu.html">Menu</a></li>
-        <li><a href="Games.html">Games</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
     </div>
 
 
   </div>
+  <div class="SideMenu" id="SideMenu">
+    <!-- <i class="fa fa-angle-right"></i>
+              <ul>
+                <li>subMenu</li>
+                <li>subMenu</li>
+                <li>subMenu</li>
+                <li>subMenu</li>
+              </ul> -->
 
-  <form action="" method="">
- 
-    <label for="UserName"> UserName</label>
-    <input type="text" name="Name" id="Name" placeholder="UserName">
-    <br>
-    <br>
-    <label for="Password">Password</label>
-    <input type="Password" id="Password" placeholder="password">
-    <br>
-    <br>
-   
-    <input type="Submit" value="Log-in">
-  
-  
-    <!-- <button type="submit">Submet</button> -->
-  
-  </form>
-  <script>
-    function openmenu() {
-      document.getElementById("SideMenu").style.display = "block";
-      document.getElementById("MenuBtn").style.display = "none";
-      document.getElementById("CloseBtn").style.display = "block";
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Menu.html">Menu</a></li>
+      <li><a href="Games.html">Games</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
 
-    }
-    function closemenu() {
-      document.getElementById("SideMenu").style.display = "none";
-      document.getElementById("MenuBtn").style.display = "block";
-      document.getElementById("CloseBtn").style.display = "none";
 
-    }
-  </script>
+</div>
+
+<form action="" method="">
+
+  <label for="UserName"> UserName</label>
+  <input type="text" name="Name" id="Name" placeholder="UserName">
+  <br>
+  <br>
+  <label for="Password">Password</label>
+  <input type="Password" id="Password" placeholder="password">
+  <br>
+  <br>
+
+  <input type="Submit" value="Log-in">
+
+
+  <!-- <button type="submit">Submet</button> -->
+
+</form>
+<script>
+  function openmenu() {
+    document.getElementById("SideMenu").style.display = "block";
+    document.getElementById("MenuBtn").style.display = "none";
+    document.getElementById("CloseBtn").style.display = "block";
+
+  }
+  function closemenu() {
+    document.getElementById("SideMenu").style.display = "none";
+    document.getElementById("MenuBtn").style.display = "block";
+    document.getElementById("CloseBtn").style.display = "none";
+
+  }
+</script>
 </body>
 
 <script>

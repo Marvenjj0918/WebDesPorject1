@@ -17,12 +17,12 @@ body{
   background: #fff;
   margin-bottom: 20px;
   /* z-index: 2; */
-   display: flex;
+  display: flex;
 }
 .Header
- {
- margin-top: 60px;
-font-weight: bold;
+{
+  margin-top: 60px;
+  font-weight: bold;
 }
 .SideMenu
 {
@@ -33,7 +33,7 @@ font-weight: bold;
 {
   margin-left: 10px;
 }
-.SideMenu ul li 
+.SideMenu ul li
 {
   list-style-type: none;
   margin-top: 10px;
@@ -50,7 +50,7 @@ font-weight: bold;
   display: none;
   z-index: 10;
   top: 77px;
-  
+
 }
 
 .SideMenu ul li
@@ -60,13 +60,13 @@ font-weight: bold;
 .SideMenu ul li:hover ul
 {
   color: aqua;
-display: block;
-height: 400px;
-margin-bottom: 300%;
-padding: 5px 100px 10px 10px;
-position: fixed;
-background: #ececec;
-box-shadow: 1px 1pz 4px 1px rgb(0, 0, 0, 00.5);
+  display: block;
+  height: 400px;
+  margin-bottom: 300%;
+  padding: 5px 100px 10px 10px;
+  position: fixed;
+  background: #ececec;
+  box-shadow: 1px 1pz 4px 1px rgb(0, 0, 0, 00.5);
 
 }
 .fa-bars
@@ -84,7 +84,7 @@ box-shadow: 1px 1pz 4px 1px rgb(0, 0, 0, 00.5);
 .FormControl
 {
   margin-top: 11px;
-    margin-left: 30px !important;
+  margin-left: 30px !important;
   border: 1px solid rgb(0, 0, 0) !important;
   border-top-left-radius: 20px !important;
   border-bottom-left-radius: 20px !important;
@@ -126,7 +126,7 @@ box-shadow: 1px 1pz 4px 1px rgb(0, 0, 0, 00.5);
   height: 57px;
   float: right;
   margin-top: 40px;
-   margin-right:10px;
+  margin-right:10px;
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s;
@@ -179,28 +179,28 @@ box-shadow: 1px 1pz 4px 1px rgb(0, 0, 0, 00.5);
   {
     width: 100%;
   }
-  .MenuBar ul 
+  .MenuBar ul
   {
     margin: 10px 0;
     width: 100%;
   }
-.MenuBar ul il 
-{
-  height: 57px;
-  width: 100%;
-}
+  .MenuBar ul il
+  {
+    height: 57px;
+    width: 100%;
+  }
 
-.SideMenu
-{
-  width: 34%;
-  z-index: 20;
-  top: 133px;
- /* position: fixed; */
- font-size: 12px;
-}
+  .SideMenu
+  {
+    width: 34%;
+    z-index: 20;
+    top: 133px;
+    /* position: fixed; */
+    font-size: 12px;
+  }
 
-.Logo
-{
-  width: 10%;
-}
+  .Logo
+  {
+    width: 10%;
+  }
 }

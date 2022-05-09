@@ -18,7 +18,7 @@ body{
 }
 .animated-background{
   background: linear-gradient(
-    to right, #0fa0e9, #fd1d1d, yellow);
+          to right, #0fa0e9, #fd1d1d, yellow);
   background-size: 400% 400%;
   animation: animate-background 10s infinite ease-in-out;
 }
@@ -67,14 +67,14 @@ body{
 {
   color: #616161;
 }
-.SideMenu ul 
+.SideMenu ul
 {
   /* display: none; */
   z-index: 10;
   top: 77px;
 }
 
-  #MenuBtn, #CloseBtn
+#MenuBtn, #CloseBtn
 {
   font-size: 30px;
   margin:10px;
@@ -96,13 +96,13 @@ body{
   height: 50px;
   margin: 5px 10px;
 }
-.MenuBar 
+.MenuBar
 {
-/*background-color: #fff;*/
-/*background-color: #fff;*/
+  /*background-color: #fff;*/
+  /*background-color: #fff;*/
   display: flex;
   /* padding: 38px; */
-  font-size: 1em;  
+  font-size: 1em;
 }
 .NavBar{
   top: 0;
@@ -110,8 +110,8 @@ body{
   /* border-bottom: 3px solid; */
   z-index: 2;
 }
- .data-collection ul li a
- {
+.data-collection ul li a
+{
   margin-right: 20px;
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
@@ -120,7 +120,7 @@ body{
 }
 .data-collection{
   /* padding: 38px; */
-  font-size: 1em; 
+  font-size: 1em;
 }
 
 .form-control{
@@ -149,7 +149,7 @@ body{
   float: right;
   display: inline-flex;
   width: 20%;
-} 
+}
 .fa-shopping-cart
 {
   margin-right: 5px;
@@ -157,9 +157,9 @@ body{
 
 
 .link a{
-color: #8a8a8a;
-text-decoration: none;
-transition: color 0.5s;
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
 
 }
 
@@ -184,7 +184,7 @@ transition: color 0.5s;
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat ;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .img-text-wrapper{
   position: absolute;
@@ -204,7 +204,7 @@ transition: color 0.5s;
   height: 0px;
   float: right;
   margin-top: 0px;
-   margin-right:0px;
+  margin-right:0px;
   text-transform: uppercase;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s;
@@ -245,7 +245,7 @@ transition: color 0.5s;
 .img-text-wrapper .subtitle {
   transition: 1s;
   color: transparent;
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .img-text-wrapper:hover .subtitle {
@@ -257,11 +257,11 @@ transition: color 0.5s;
   transition: 1s;
   filter: brightness(10%);
 }
-  .data-collection
-  {
+.data-collection
+{
 
-    float: right;
-  }
+  float: right;
+}
 
 @media only screen and (max-width:980px)
 {

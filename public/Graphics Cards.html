@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!--  <link rel='stylesheet' href='styles.css'>-->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
+<!--<div class="animated-background">-->
 <div class="container">
     <div class="NavBar">
         <div class="MenuBar">
             <i class="fa fa-bars" id="MenuBtn" onclick="openmenu()"></i>
             <i class="fa fa-times" id="CloseBtn" onclick="closemenu()"></i>
 
-            <img src="./Images/Picture1.png" class="Logo">
+            <img src="/images/Logo.png" class="Logo">
 
 
 
             <div class="data-collection">
                 <ul>
                     <li>
-                        <a href="./Log-in.html">log-in</a></li>
-                    <li><a href="./Sign-up.html">sign up</a></li>
-                    <li><a href="./Cart.html"><i class="fa fa-shopping-cart"></i>Cart</a></li>
+                        <!-- <a href="./Log-in.html">log-in</a></li>
+                        <li><a href="./Sign-up.html">sign up</a></li> -->
+                        <!-- <nav class="menu"> -->
+
+                    <li><a href="/users/login">Log in</a> | </li>
+                    <li><a href="/users/signup">Sign up</a></li>
+
+
+                    <li><a href="/users/Cart"><i class="fa fa-shopping-cart"></i>Cart</a></li>
                 </ul>
             </div>
             <div class="SearchBox">
-                <input type="text" class="form-control">
-                <span class="input-goup-text"><i class="fa fa-search"></i> </span>
+                <input type="text" placeholder="Search.." class="form-control">
+                <button class="input-goup-text" type="submit"><i class="fa fa-search"></i> </button>
             </div>
 
         </div>
@@ -46,18 +55,18 @@
     </div>
     <div class="SideMenu" id="SideMenu">
         <!-- <i class="fa fa-angle-right"></i>
-                  <ul>
-                    <li>subMenu</li>
-                    <li>subMenu</li>
-                    <li>subMenu</li>
-                    <li>subMenu</li>
-                  </ul> -->
+                <ul>
+                  <li>subMenu</li>
+                  <li>subMenu</li>
+                  <li>subMenu</li>
+                  <li>subMenu</li>
+                </ul> -->
 
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Menu.html">Menu</a></li>
-            <li><a href="Games.html">Games</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="/users/index">Home</a></li>
+            <li><a href="/users/Menu">Menu</a></li>
+            <li><a href="/users/Games">Games</a></li>
+            <li><a href="/users/about">About</a></li>
         </ul>
     </div>
     <div class="cd-cart cd-cart--empty js-cd-cart">
@@ -99,7 +108,7 @@
             <li class="cd-cart__product">
                 <div class="cd-cart__image">
                     <a href="#0">
-                        <img src="images/geforce3090Ti.png" alt="Geforce 3090 Ti">
+                        <img src="/images/geforce3090Ti.png" alt="Geforce 3090 Ti">
                     </a>
                 </div>
 
